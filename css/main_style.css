@@ -1,0 +1,15 @@
+/*
+colorblind safe color palette from colorbrewer2.org
+#f4a582 - peach
+#0571b0 - blue
+*/
+
+body {
+  background-color: #f4a582;
+  color: #0571b0;
+  text-align: center;
+}
+
+h1 {
+  color: #f7f7f7;
+}
