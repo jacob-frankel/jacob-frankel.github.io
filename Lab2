@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jacob Frankel</title>
+</head>
+<body>
+  <h1>Hello, my name is Jacob Frankel</h1>
+  <img src="C:\Users\Jacob\webmapping\jacob-frankel.github.io\images\nc" width=500px height=500px />
+  <br>
+  <p>Welcome to my webpage.<br>
+    I am a Masters Student in the
+    <a href="https://www.clarku.edu/academics/graduate/programs/masters/geographic-information-science/">MSGIS Department</a>
+    at <a href="https://www.clarku.edu/"> Clark University </a></p><br>
+    <p>Research Interests:
+      <ol>
+        <li>Remote Sensing</li>
+        <li>Conservation GIS</li>
+        <li>Data Analysis</li>
+        <li>Coding</li>
+      </ol>
+    </p><br>
+</body>
+</html>
