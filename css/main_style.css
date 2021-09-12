@@ -45,3 +45,7 @@ body {
   position: relative;
   left: 50px;
 }
+
+footer {
+  font: sans serif
+}
