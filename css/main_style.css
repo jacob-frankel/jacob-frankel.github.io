@@ -4,16 +4,21 @@ colorblind safe color palette from colorbrewer2.org
 #0571b0 - blue
 */
 
+/*Sets the background color of the header to blue*/
 #header {
   background-color: #0571b0;
 }
 
+/*sets the color of all items designated h1 to peach, gives them a padding of 5 pixels and a nonexistent margin*/
 h1 {
   color: #f7f7f7;
   padding: 5px;
   margin: 0;
 }
 
+/*Sets the background color of body container to peach, gives it a maximum width of 1000 pixels, sets the
+margin at auto, sets the height at 100vh, gives it a two pixel border and gives that border a peach color,
+set the radius of the border at 25 pixels, and sets the page to hide content when it overflows*/
 #body-container {
   background-color: #f7f7f7;
   max-width: 1000px;
@@ -24,21 +29,26 @@ h1 {
   overflow: hidden;
 }
 
+/*Sets the background color to peach, sets the text color to blue, and sets the alignment to center*/
 body {
   background-color: #f4a582;
   color: #0571b0;
   text-align: center;
 }
 
+/*Sets the profile picture to float on the left side*/
 #profile-picture {
   float: left;
 }
 
+/*Sets the padding from the top to 25 pixels and the font size 25 pixels*/
 #welcome-text {
   padding-top: 25px;
   font-size: 25px;
 }
 
+/*sets the text to align on the left and the font size to 25 pixels, sets
+the position to be relative to the rest of the page*/
 #research-interests {
   text-align: left;
   font-size: 25px;
@@ -46,6 +56,7 @@ body {
   left: 50px;
 }
 
+/*sets the font of the footer to sans serif*/
 footer {
   font: sans serif
 }
