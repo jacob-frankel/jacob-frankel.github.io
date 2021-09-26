@@ -13,19 +13,13 @@
 //document.writeln("<br>");
 //document.writeln(x += 33);
 
-//document.writeln("<button onclick='condition()'>Conditional Test</button>")
-//function condition() {
-  //x = confirm("Are you sure you want to proceed?");
-  //if(x){
-    //document.writeln("You choose Okay!");
-  //}
-  //else{
-    //document.writeln("You choose Cancel!");
-  //}
-//}
-
-
-arr = ["Joe","April","Mark","Sara"];
-for (var i=0; i<arr.length; i++){
-  document.writeln(arr[i],"<br>");
+document.writeln("<button onclick='condition()'>Conditional Test</button>")
+function condition() {
+  x = confirm("Are you sure you want to proceed?");
+  if(x){
+    document.writeln("You choose Okay!");
+  }
+  else{
+    document.writeln("You choose Cancel!");
+  }
 }
