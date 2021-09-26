@@ -15,6 +15,7 @@
       <img src="images/me.jpg" width=500px height=500px />
     </div><br>
     <div id="welcome-text">
+      My name is Jacob.<br>
       Welcome to my webpage.<br>
       I am a Masters Student in the
       <a href="https://www.clarku.edu/academics/graduate/programs/masters/geographic-information-science/">MSGIS Department</a>
@@ -30,6 +31,17 @@
       </ol>
     </div>
   </div>
-  <footer>© 2021 by Jacob Frankel</footer>
+  <footer>
+  <div id="copyright">
+    <script>
+    //Using the new Date() function, this calls for a new object representing today as a date
+    var today = new Date();
+    //the getFullYear() function finds the year that the object for today is located in
+    var year = today.getFullYear();
+    //The command to write the copyright line
+    document.writeln("Copyright &copy; " + year);
+  </script>
+</div>
+</footer>
 </body>
 </html>
