@@ -58,8 +58,7 @@ the position to be relative to the rest of the page*/
 
 /*sets the font of the footer to sans serif*/
 #copyright {
- position: absolute;
- width: 1000px;
+ position: relative;
  text-align: center;
  bottom: 20px;
 }
