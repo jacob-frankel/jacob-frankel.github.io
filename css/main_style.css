@@ -43,15 +43,15 @@ body {
 
 /*Sets the padding from the top to 25 pixels and the font size 25 pixels*/
 #welcome-text {
-  padding-top: 25px;
-  font-size: 25px;
+  padding-top: 10px;
+  font-size: 20spx;
 }
 
 /*sets the text to align on the left and the font size to 25 pixels, sets
 the position to be relative to the rest of the page*/
 #research-interests {
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   left: 50px;
 }
@@ -62,4 +62,10 @@ the position to be relative to the rest of the page*/
  width: 1000px;
  text-align: center;
  bottom: 20px;
+}
+
+#webmap-reviews{
+  text-align: left;
+  font-size: 10px;
+  position: relative;
 }
