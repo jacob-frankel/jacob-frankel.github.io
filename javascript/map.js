@@ -15,7 +15,7 @@ function initMap({
     var marker1 = L.marker([27.174961, 78.042385], {editable: true
     }).addTo(mymap).bindPopup("<b>India's Taj Mahal.</b> <img src='images/taj.jpg'/> The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.").openPopup();
 
-    var marker2 = L.marker([40.334245, 116.477652], {
+    var marker2 = L.marker([40.334245, 116.477652], {draggable: true
     }).bindPopup("<b>Great Wall of China.</b> <img src='images/greatwall.png'/> The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. Several walls were built from as early as the 7th century BC,[2] with selective stretches later joined together by Qin Shi Huang (220–206 BC), the first emperor of China. Little of the Qin wall remains.[3] Later on, many successive dynasties built and maintained multiple stretches of border walls. The best-known sections of the wall were built by the Ming dynasty (1368–1644).", {editable: true}).addTo(mymap);
 
     var marker3 = L.marker([30.328611, 35.441944], {
