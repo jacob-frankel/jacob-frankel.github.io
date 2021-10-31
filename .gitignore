@@ -1,3 +1,5 @@
+"javascript/secret_keys.js"
+
 
 <!DOCTYPE html>
 <html>
@@ -61,8 +63,7 @@
             var width1 = document.getElementById('width').value;
             var length1 = document.getElementById('length').value;
             var area = parseInt(width1) * parseInt(length1);
-            return(area);
-          }
+            return(area);}
     </script>
     <script>
       document.write(area)
