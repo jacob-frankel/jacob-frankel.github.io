@@ -39,6 +39,12 @@ function initMap({
         [43.1291, 1.261]
     ]).addTo(mymap);
 
+    L.semiCircle([51.5, -0.09], {
+      radius: 500,
+      startAngle: 45,
+      stopAngle: 135
+    }).addTo(map);
+
     marker1.on('click', function(e){
       mymap.setView(e.latlng, 13);
     });
