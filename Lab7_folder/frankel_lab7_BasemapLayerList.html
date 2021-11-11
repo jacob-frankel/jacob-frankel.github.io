@@ -1,0 +1,119 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>GeoJSONLayer | Sample | ArcGIS API for JavaScript 4.21</title>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.21/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.21/"></script>
+
+  <script>
+    require(["esri/Map", "esri/layers/GeoJSONLayer", "esri/views/MapView", "esri/widgets/BasemapLayerList"], (
+      Map,
+      GeoJSONLayer,
+      MapView,
+      BasemapLayerList
+    ) => {
+      // If GeoJSON files are not on the same domain as your website, a CORS enabled server
+      // or a proxy is required.
+
+      // new url, showing the US states outlines
+      const url = "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_1_states_provinces_shp.geojson";
+
+      // Paste the url into a browser's address bar to download and view the attributes
+      // in the GeoJSON file. These attributes include:
+      // * mag - magnitude
+      // * type - earthquake or other event such as nuclear test
+      // * place - location of the event
+      // * time - the time of the event
+      // Use the Arcade Date() function to format time field into a human-readable format
+
+      const template = {
+        title: "US Borders",
+        content: "Borders",
+        fieldInfos: [
+          {
+            fieldName: 'time',
+            format: {
+              dateFormat: 'short-date-short-time'
+            }
+          }
+        ]
+      };
+
+      const renderer = {
+        type: "simple",
+        field: "mag",
+        symbol: {
+          type: "simple-line",
+          // changed the renderer color to green
+          color: "green",
+          outline: {
+            color: "blue"
+          }
+        },
+        visualVariables: [{
+          type: "size",
+          field: "mag",
+          stops: [{
+              value: 2.5,
+              size: "4px"
+            },
+            {
+              value: 8,
+              size: "40px"
+            }
+          ]
+        }]
+      };
+
+      const geojsonLayer = new GeoJSONLayer({
+        url: url,
+        copyright: "",
+        popupTemplate: template,
+        renderer: renderer //optional
+      });
+
+      const map = new Map({
+        basemap: "gray-vector",
+        layers: geojsonLayer
+      });
+
+      const view = new MapView({
+        container: "viewDiv",
+        center: [-118, 46],
+        zoom: 3,
+        map: map
+      });
+
+      //Added a basemap layer list, that shows the list of basemaps.
+      let basemapLayerList = new BasemapLayerList({
+        view: view
+      });
+      // Adds the widget below other elements in the top left corner of the view
+      view.ui.add(basemapLayerList, {
+        position: "top-left"
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
