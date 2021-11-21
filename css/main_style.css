@@ -13,9 +13,23 @@ colorblind safe color palette from colorbrewer2.org
 
 /*sets the color of all items designated h1 to peach, gives them a padding of 5 pixels and a nonexistent margin*/
 h1 {
-  color: #659DBD;
   padding: 5px;
   margin: 0;
+  color: black;
+}
+
+h2 {
+  padding: 5px;
+  margin: 0;
+  color: black;
+  font-size: 25px;
+}
+
+h3 {
+  padding: 5px;
+  margin: 0;
+  color: black;
+  font-size: 20px;
 }
 
 /*Sets the background color of body container to peach, gives it a maximum width of 1000 pixels, sets the
@@ -25,7 +39,7 @@ set the radius of the border at 25 pixels, and sets the page to hide content whe
   background-color: #FBEEC1;
   max-width: 1000px;
   margin: auto;
-  height: 535vh;
+  height: 570vh;
   border: 10px solid #FBEEC1;
   border-radius: 25px;
   overflow: hidden;
@@ -47,8 +61,10 @@ body {
 /*Sets the padding from the top to 25 pixels and the font size 25 pixels*/
 #welcome-text {
   padding-top: 10px;
-  font-size: 20spx;
+  font-size: 30spx;
   color: black;
+  font-family: Garamond, serif;
+  text-align: center;
 }
 
 /*sets the text to align on the left and the font size to 25 pixels, sets
@@ -73,7 +89,20 @@ the position to be relative to the rest of the page*/
   position: relative;
 }
 
-.leaflet-popup-conent-wrapper,
-.leaflet-popup-tip {
-  background: yellow;
+#toc_container {
+    background: #FBEEC1 none repeat scroll 0 0;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
 }
