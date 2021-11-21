@@ -39,7 +39,7 @@ set the radius of the border at 25 pixels, and sets the page to hide content whe
   background-color: #FBEEC1;
   max-width: 1000px;
   margin: auto;
-  height: 600vh;
+  height: 650vh;
   border: 10px solid #FBEEC1;
   border-radius: 25px;
   overflow: hidden;
