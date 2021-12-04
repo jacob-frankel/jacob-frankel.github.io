@@ -32,6 +32,13 @@ h3 {
   font-size: 20px;
 }
 
+p {
+  padding: 5px;
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+
 /*Sets the background color of body container to peach, gives it a maximum width of 1000 pixels, sets the
 margin at auto, sets the height at 100vh, gives it a two pixel border and gives that border a peach color,
 set the radius of the border at 25 pixels, and sets the page to hide content when it overflows*/
